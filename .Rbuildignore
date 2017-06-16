@@ -1,0 +1,7 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^analysis$
+^experimental/$
+^data-raw$
+^databases$
+^implict_test.ipynb$
