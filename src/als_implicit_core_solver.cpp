@@ -11,6 +11,7 @@ using namespace Rcpp;
 using namespace RcppArmadillo;
 using namespace arma;
 
+// [[Rcpp::depends(RcppArmadillo)]]
 // [[Rcpp::export]]
 void als_implicit(const arma::sp_mat& mat, arma::mat& X, arma::mat& XtX, arma::mat& Y, int n_threads) {
   int nc = mat.n_cols;
