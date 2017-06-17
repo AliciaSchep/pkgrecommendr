@@ -19,6 +19,6 @@ setMethod(recommend_tpr, c(recommender = "VirtualRecommender", test = "Matrix"),
                                     dims = c(nrow(test),n))
             rowSums(apply(rec_mat, 1, cumsum) / matrix(rowSums(holdout),
                                                        ncol = nrow(holdout),
-                                                       nrow = 10,
+                                                       nrow = n,
                                                        byrow = TRUE)) / nrow(test)
           })

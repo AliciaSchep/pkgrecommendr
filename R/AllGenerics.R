@@ -11,6 +11,6 @@
 #' @rdname pkgrecommendr-methods
 setGeneric("recommend_ratings", function(recommender, test, ...) standardGeneric("recommend_ratings"))
 
-setGeneric("recommend_items", function(recommender,test, holdout, ...) standardGeneric("recommend_items"))
+setGeneric("recommend_items", function(recommender,test, ...) standardGeneric("recommend_items"))
 
 setGeneric("recommend_tpr", function(recommender,test, holdout, ...) standardGeneric("recommend_tpr"))
